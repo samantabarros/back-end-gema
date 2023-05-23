@@ -44,6 +44,7 @@ export class UsuariosService {
     });
   }
 
+  //Deleta usuario
   async delete(id: string) {
     const usuarioExists = await this.prisma.usuario.findUnique({
       where: {
