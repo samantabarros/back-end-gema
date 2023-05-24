@@ -9,7 +9,6 @@ import {
 } from '@nestjs/common';
 import { ModulosService } from './modulos.service';
 import { ModuloDTO } from './modulos.dto';
-
 @Controller('modulos')
 export class ModulosController {
   constructor(private readonly modulosService: ModulosService) {}
